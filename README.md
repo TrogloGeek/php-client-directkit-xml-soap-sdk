@@ -16,8 +16,13 @@ In order to use [`SoapClient`], you have to activate the following extensions in
 # Generate the SDK
 
 We will use [`wsdl2phpgenerator client`](https://github.com/wsdl2phpgenerator/wsdl2phpgenerator-cli) to generate the LemonWay Stubs:
+## Windows shell
 ```
 php wsdl2phpgenerator-2.5.5.phar -i https://ws.lemonway.fr/mb/YOUR_COMPANY/dev/directkitxml/service.asmx?wsdl -o .\directkitxml -n Directkit
+```
+## *nix shell (Unix, Linux, *BSD, MacOSX)
+```
+php wsdl2phpgenerator-2.5.5.phar -i https://ws.lemonway.fr/mb/YOUR_COMPANY/dev/directkitxml/service.asmx?wsdl -o ./directkitxml -n Directkit
 ```
 this command will generate the PHP classes corespond to all requests / response of the [Lemonway Directkit API] 
 
